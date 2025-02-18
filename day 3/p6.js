@@ -2,10 +2,14 @@ const http=require('http');
 
 const server=http.createServer(async(req,res)=>{
     const data=await fetch("https://dummyjson.com/products");
+    res.statusCode=200;
     res.setHeader('Content-Type','application/json');
     const newproducts=await data.json();
-    res.statusCode=200;
-    res.end(JSON.stringify(newproducts));
+    const myproduct=newproducts.products;
+    const title=myproduct.map((product)=>{
+        return product.title;
+    });
+    res.end(JSON.stringify(title));
 });
 server.listen(9000,(err)=>{
     if (err)
