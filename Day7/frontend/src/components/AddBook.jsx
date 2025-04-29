@@ -14,12 +14,12 @@ const AddBook = () => {
   return (
     <div>
       <h1>Add Book Details</h1>
-      <form onSubmit={handleadd}>
-        Title: <input type='text' name='title' required/>
-        Author: <input type='text' name='author' required/>
-        Date: <input type='date' name='date' required/>
-        Image URL: <input type='text' name='image' required/>
-      <button type='submit'>Add Book</button>
+      <form className='formCon' onSubmit={handleadd}>
+        Title: <input className='inp' type='text' name='title' required/>
+        Author: <input className='inp' type='text' name='author' required/>
+        Date: <input className='inp' type='date' name='date' required/>
+        Image URL: <input className='inp' type='text' name='image' required/>
+      <button className='but' type='submit'>Add Book</button>
       </form>
     </div>
   )

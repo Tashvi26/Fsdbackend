@@ -2,11 +2,11 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #cce5ff, #e6f2ff);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 nav {
-  background: linear-gradient(90deg, #004080, #007bff);
+  background: linear-gradient(90deg, #04203c, #20252b);
   padding: 1rem;
   display: flex;
   gap: 1.5rem;
@@ -25,7 +25,7 @@ nav a {
 }
 
 nav a:hover {
-  background: linear-gradient(90deg, #0052cc, #66b3ff);
+  background: linear-gradient(90deg, #0052cc, #080a0c);
   transform: scale(1.05);
 }
 
@@ -42,4 +42,23 @@ div {
   max-width: 1000px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.formCon{
+  background-color: #e9eaed;
+  display: flex;
+  /* width: 400px; */
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+}
+.inp{
+  width: 300px;
+  margin: 5px;
+}
+.but{
+  padding: 10px;
+  border: 1px solid rgb(137, 137, 144);
+  border-radius: 10px;
+  margin: 20px;
 }
